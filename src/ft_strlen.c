@@ -6,11 +6,11 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 16:37:26 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/14 18:14:27 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/14 20:14:23 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 /**
  * @brief Computes the length of a null-terminated string.
  *
