@@ -6,12 +6,23 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 19:50:02 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/15 20:51:00 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/15 21:17:47 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/**
+ * @brief Fills a block of memory with a specific value.
+ *
+ * This function sets the first 'num' bytes of the memory area 
+ * pointed to by 'str' to the specified value 'c' (interpreted 
+ * as an unsigned char).
+ *
+ * @param str Pointer to the memory area to fill.
+ * @param c The value to set (interpreted as unsigned char).
+ * @param num The number of bytes to fill.
+ * @return The original pointer 'str'.
+ */
 void	*memset(void *str, int c, size_t num)
 {
 	unsigned char	u_char;
