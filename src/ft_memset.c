@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 19:50:02 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/15 21:17:47 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/15 21:35:42 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@
  * as an unsigned char).
  *
  * @param str Pointer to the memory area to fill.
- * @param c The value to set (interpreted as unsigned char).
+ * @param chr The value to set (interpreted as unsigned char).
  * @param num The number of bytes to fill.
  * @return The original pointer 'str'.
  */
-void	*memset(void *str, int c, size_t num)
+void	*memset(void *str, int chr, size_t num)
 {
 	unsigned char	u_char;
 	unsigned char	*ptr;
@@ -31,7 +31,7 @@ void	*memset(void *str, int c, size_t num)
 
 	count = 0;
 	ptr = (unsigned char *)str;
-	u_char = (unsigned char)c;
+	u_char = (unsigned char)chr;
 	while (count < num)
 	{
 		ptr[count] = u_char;
