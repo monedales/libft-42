@@ -6,43 +6,34 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 20:21:46 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/14 21:20:03 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/15 19:04:42 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /**
- * @brief [Breve descrição da função]
+ * @brief checks whether a character is alphabetic.
  *
- * [Descrição mais detalhada, se quiser]
+ * The function checks if the given character c is an
+ * alphabetic character, either uppercase or lowercase.
  *
- * @param [nome] [descrição do parâmetro]
- * @param [nome] [descrição do parâmetro] (se tiver mais de um)
- * @return [descrição clara do retorno]
+ * @param c The character to be checked.
+ * @return the values returned are nonzero if the character 
+ * c falls into an alphabetic character, zero otherwise.
  */
-
-size_t	ft_isalpha(char *str)
+int	ft_isalpha(int c)
 {
-	size_t	count;
-
-	count = 0;
-	while (str[count])
-	{
-		if (!((str[count] >= 'a' && str[count] <= 'z')
-				|| (str[count] >= 'A' && str[count] <= 'Z')))
-			return (0);
-		count++;
-	}
-	return (1);
+	if (!((c >= 'a' && c <= 'z')
+			|| (c >= 'A' && c <= 'Z')))
+		return (0);
+	else
+		return (1);
 }
 
- #include <stdio.h>
- int	main(void)
- {
- 	int	i;
+// #include <stdio.h>
 
- 	i = ft_isalpha("oasdasdasdasdaaa");
- 	printf("teste: %d\n", i);
- 	return (0);
- }
-
+// int	main(void)
+// {
+// 	printf("%d\n", ft_isalpha('a'));
+//  	return (0);
+// }
