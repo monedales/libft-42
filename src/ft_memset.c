@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 19:50:02 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/15 21:35:42 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/16 16:17:51 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
  * @param num The number of bytes to fill.
  * @return The original pointer 'str'.
  */
-void	*memset(void *str, int chr, size_t num)
+void	*ft_memset(void *str, int chr, size_t num)
 {
 	unsigned char	u_char;
 	unsigned char	*ptr;
