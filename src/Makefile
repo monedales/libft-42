@@ -17,6 +17,7 @@ SRC = \
 	ft_memmove.c \
 	ft_memset.c \
 	ft_strlen.c \
+	ft_strncmp.c \
 	ft_tolower.c \
 	ft_toupper.c \
 

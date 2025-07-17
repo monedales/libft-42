@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 20:20:03 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/16 20:45:22 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/16 21:17:46 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@
  * @param num The number of bytes to compare.
  * @return An integer less than, equal to, or greater than zero:
  * - Returns zero if the memory areas are equal.
- * - Returns the difference between the first differing bytes (s1[i] - s2[i]).
+ * - Returns the difference between the first differing bytes 
+ * (s1[count] - s2[count]).
  * - If 'num' is zero, the return value is zero.
  */
 int	ft_memcmp(const void *s1, const void *s2, size_t num)

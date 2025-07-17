@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 20:13:11 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/16 20:21:23 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/16 21:04:25 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t num);
 void	*ft_memmove(void *dest, const void *src, size_t num);
 void	*ft_memchr(const void *src, int chr, size_t num);
 int		ft_memcmp(const void *s1, const void *s2, size_t num);
+int		ft_strncmp(const char *s1, const char *s2, size_t num);
 
 #endif
