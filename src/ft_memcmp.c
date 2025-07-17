@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 20:20:03 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/16 21:17:46 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/17 13:51:17 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t num)
 	count = 0;
 	ps1 = (unsigned char *)s1;
 	ps2 = (unsigned char *)s2;
-
 	while (count < num)
 	{
 		if (ps1[count] != ps2[count])

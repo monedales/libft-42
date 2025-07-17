@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 16:38:52 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/16 17:35:13 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/17 14:20:07 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	*ft_memmove(void *dest, const void *src, size_t num)
 
 	pdest = (unsigned char *)dest;
 	psrc = (unsigned char *)src;
-	if (!dest && !src)
+	if (!dest || !src)
 		return (NULL);
 	if (psrc < pdest)
 	{
@@ -44,6 +44,6 @@ void	*ft_memmove(void *dest, const void *src, size_t num)
 		}
 	}
 	else
-		ft_memcpy(dest, src, num);
+		return (ft_memcpy(dest, src, num));
 	return (dest);
 }
