@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 20:13:11 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/18 15:06:32 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/18 20:24:43 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ char	*ft_strchr(const char *str, int chr);
 char	*ft_strrchr(const char *str, int chr);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
+char	*ft_strdup(const char *str);
 
 #endif
