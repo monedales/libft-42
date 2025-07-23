@@ -1,36 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/16 13:15:38 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/23 18:30:19 by maria-ol         ###   ########.fr       */
+/*   Created: 2025/07/23 18:28:23 by maria-ol          #+#    #+#             */
+/*   Updated: 2025/07/23 19:43:29 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /**
- * @brief Writes zero-valued bytes to a block of memory.
+ * @brief Outputs a single character to the specified file descriptor.
  *
- * This function sets the first 'num' bytes of the memory area
- * pointed to by 'str' to zero (value '\0').
- *
- * @param str Pointer to the memory area to be zeroed.
- * @param num The number of bytes to set to zero.
+ * @param c The character to output.
+ * @param fd The file descriptor on which to write.
  * @return None.
  */
-void	ft_bzero(void *str, size_t num)
+void	ft_putchar_fd(char c, int fd)
 {
-	unsigned char	*ptr;
-	size_t			count;
-
-	ptr = (unsigned char *)str;
-	count = 0;
-	while (count < num)
-	{
-		ptr[count] = '\0';
-		count++;
-	}
+	write(fd, &c, 1);
 }
+
+// int	main(void)
+// {
+// 	char	c;
+
+// 	c = 'c';
+// 	ft_putchar_fd(c, 1);
+// 	return (0);
+// }
