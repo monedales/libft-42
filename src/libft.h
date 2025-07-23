@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 20:13:11 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/18 20:24:43 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/22 21:55:11 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+#include <stdio.h>
 
 size_t	ft_strlen(const char *str);
 int		ft_isalpha(int chr);
@@ -35,5 +36,6 @@ char	*ft_strrchr(const char *str, int chr);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 char	*ft_strdup(const char *str);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 #endif
