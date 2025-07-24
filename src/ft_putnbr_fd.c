@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 20:02:00 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/23 20:20:32 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/24 16:48:15 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ void	ft_putnbr_fd(int n, int fd)
 	int	int_min;
 
 	int_min = -2147483648;
+	if (fd < 0)
+		return ;
 	if (n == int_min)
 	{
 		ft_putchar_fd('-', fd);
@@ -46,6 +48,6 @@ void	ft_putnbr_fd(int n, int fd)
 }
 // int	main(void)
 // {
-// 	ft_putnbr_fd(0, 1);
+// 	ft_putnbr_fd(1, -1);
 // 	return (0);
 // }
