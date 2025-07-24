@@ -30,6 +30,8 @@ SRC = \
 	ft_strchr.c \
 	ft_strdup.c \
 	ft_strrchr.c \
+	ft_strmapi.c \
+	ft_striteri.c \
 	ft_tolower.c \
 	ft_toupper.c \
 
