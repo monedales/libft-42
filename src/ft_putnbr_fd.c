@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 20:02:00 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/24 16:48:15 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/25 13:53:36 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ void	ft_putnbr_fd(int n, int fd)
 }
 // int	main(void)
 // {
-// 	ft_putnbr_fd(1, -1);
+// 	ft_putnbr_fd(-120, 2);
+// 	ft_putnbr_fd(2103, 2);
 // 	return (0);
 // }
