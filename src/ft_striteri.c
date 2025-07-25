@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 13:47:27 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/24 20:17:26 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/25 13:51:17 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,39 +27,26 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	unsigned int	count;
 
 	count = 0;
+	if (!s || !f)
+		return ;
 	while (s[count])
 	{
-		if (!s || !f)
-			return ;
 		f(count, &s[count]);
 		count++;
 	}
 }
-// char	touppereven(unsigned int i, char c)
+// // Função que transforma o caractere em maiúsculo
+// void	to_upper_in_place(unsigned int i, char *c)
 // {
-// 	if (i % 2 && c >= 'a' && c <= 'z')
-// 		return (c - 32);
-// 	return (c);
+// 	(void)i; // ignoramos o índice aqui
+// 	if (*c >= 'a' && *c <= 'z')
+// 		*c = *c - 32;
 // }
-// char	mask_vowels(unsigned int i, char c)
-// {
-// 	(void)i;
-// 	if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
-// 		c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
-// 		return ('*');
-// 	return (c);
-// }
-
 // int	main(void)
 // {
-// 	char *str = "my lib, my rules.";
-// 	void *result = ft_striteri(str, touppereven);
-// 	char *result2 = ft_striteri(str, mask_vowels);
-
-// 	printf("Original: %s\n", str);
-// 	printf("Result:   %s\n", result);
-// 	printf("Result2:   %s\n", result2);
-// 	free(result);
-
+// 	char	str[] = "hello, 42!";
+// 	printf("Antes: %s\n", str);
+// 	ft_striteri(NULL, to_upper_in_place);
+// 	printf("Depois: %s\n", str);
 // 	return (0);
 // }
