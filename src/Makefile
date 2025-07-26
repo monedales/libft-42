@@ -31,6 +31,7 @@ SRC = \
 	ft_strdup.c \
 	ft_strrchr.c \
 	ft_strmapi.c \
+	ft_strtrim.c \
 	ft_striteri.c \
 	ft_strjoin.c \
 	ft_substr.c \
