@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 20:13:11 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/25 20:26:45 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/29 14:16:08 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
+# include <limits.h>
 
 size_t	ft_strlen(const char *str);
 int		ft_isalpha(int chr);
@@ -23,6 +24,7 @@ int		ft_isalnum(int chr);
 int		ft_isdigit(int chr);
 int		ft_isprint(int chr);
 int		ft_isascii(int chr);
+char	*ft_itoa(int n);
 int		ft_tolower(int chr);
 int		ft_toupper(int chr);
 void	*ft_memset(void *str, int chr, size_t num);
