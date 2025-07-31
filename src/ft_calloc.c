@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 15:02:51 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/23 18:22:17 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/07/31 13:09:47 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
  * behavior.
  *
  * @param amount Specifies the amount of items to allocate memory for.
- * @param bytes_size Specifies the size os each item measured in bytes.
+ * @param bytes_size Specifies the size of each item measured in bytes.
  * @return On success, returns a pointer to the allocated memory setted to zero.
  * 	- If 'amount' or 'bytes_size' is 0, it returns a valid pointer that 
  * can be passed successfully to free().
