@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 12:42:02 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/08/01 13:52:16 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/08/01 15:01:49 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,8 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 // void	del_content(void *content)
 // {
 // 	printf("Liberando o conteúdo: %s\n", (char *)content);
-// 	free(content);
+// 	// free(content);
 // }
-
 // int	main(void)
 // {
 // 	t_list	*node;
