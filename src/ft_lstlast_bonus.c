@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/31 20:33:16 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/07/31 21:30:33 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/08/01 12:23:49 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*last;
 
+	if (!lst)
+		return (NULL);
 	last = lst;
 	while ((*last).next != NULL)
 		last = last->next;
