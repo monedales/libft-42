@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 13:54:35 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/08/01 15:02:13 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/08/01 19:38:49 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 // 	second->next = NULL;
 // 	//limpando a partir do terceiro nó
 // 	ft_lstclear(&third, del_content);
-	
 // 	t_list *tmp = lista;
 // 	while (tmp)
 // 	{

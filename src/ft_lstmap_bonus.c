@@ -6,7 +6,7 @@
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 16:54:21 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/08/01 18:50:32 by maria-ol         ###   ########.fr       */
+/*   Updated: 2025/08/01 19:45:40 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 // 	char	*str = (char *)content;
 // 	char	*upper = strdup(str);
 // 	int		i = 0;
-
 // 	if (!upper)
 // 		return (NULL);
 // 	while (upper[i])
