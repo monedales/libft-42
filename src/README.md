@@ -1,4 +1,4 @@
-# libft 📚  
+# Libft 📚  
 A custom implementation of essential C library functions, plus additional utilities, developed as part of the 42 curriculum to reinforce knowledge of C programming, memory management, and algorithms.
 
 ## Description 📜  
@@ -56,9 +56,38 @@ The main goal is to provide a personal toolkit to replace or extend `<string.h>`
 
 ---
 
-## Instructions 🚀  
-Compile the library:  
+## Used Tests 🧪
+- [Francinette](https://github.com/xicodomingues/francinette)
+
+## Grade: 125 / 125 🏅
+Iuuhu!
+
+## Useful Links 🔗
+- [Dynamic Memory Allocation](https://www.geeksforgeeks.org/c/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
+- [C String Library](https://www.w3schools.com/c/c_ref_string.php)
+- [Linked Lists](https://medium.com/@luiz.gandra/estruturas-de-dados-por-que-usar-linked-lists-e-como-manipul%C3%A1-las-a80e425d3006)
+
+## Using Libft in Your Project 🚀
+
+Libft is a custom C library that reimplements standard C library functions and adds extra utility functions to assist in future projects at 42.  
+To use **libft** in your own project:
+
+1. **Clone this repository** to your local machine.
+2. **Compile the library** to generate `libft.a`.
+3. **Include** the `libft.h` header in your source code.
+4. **Link** the compiled library when compiling your program.
+
+### Installation & Compilation 🛠️
+
 ```bash
+# Clone the repository
+git clone https://github.com/<your-github-username>/Libft-42sp.git
+
+# Navigate into the directory
+cd Libft-42sp
+```
+### Instructions 🚀 
+```bash 
 make
 ```
 This will create the `libft.a` library, which you can link to your projects.
@@ -75,22 +104,33 @@ make fclean
 ```bash
 make re
 ```
-
 - To compile the bonus section, run the command `make bonus`
 ```bash
 make bonus
 ```
 
-## Used Tests 🧪
-- [Francinette](https://github.com/xicodomingues/francinette)
+## Example Program 💡
+```bash
+#include "Libft-42sp/libft.h"
 
-## Grade: 125 / 125 🏅
-Iuuhu!
+int	main(void)
+{
+	ft_putstr_fd("Hello hello hello!\n", 1);
+	return (0);
+}
+```
+### Compilation Command 📦
+```bash
+gcc libft.c -o libft -L ./Libft-42sp -lft
+```
+## Expected Output 📜
+```bash
+./libft
+Hello world!
+```
 
-## Useful Links 🔗
-- [Dynamic Memory Allocation](https://www.geeksforgeeks.org/c/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
-- [C String Library](https://www.w3schools.com/c/c_ref_string.php)
-- [Linked Lists](https://medium.com/@luiz.gandra/estruturas-de-dados-por-que-usar-linked-lists-e-como-manipul%C3%A1-las-a80e425d3006)
+### Notes 📌
+Ensure you use the correct path when including the library and header file.
 
 ## License 📜
 This project was developed for academic purposes at 42, but feel free to use it as reference or inspiration.
